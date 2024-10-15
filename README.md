@@ -1,8 +1,10 @@
-# React + Vite
+# Lado del cliente de Consultorio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Correr los siguientes comandos para inicializar el proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+npm i
+npm run dev
+```
+## Crear un .env especificando la variable de entorno `VITE_API_URL` pasandole nuestra el endpoint de nuestra api corriendo en local: `http://localhost:[puerto]/api/v1`
