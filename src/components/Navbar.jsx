@@ -28,11 +28,7 @@ const Navbar2 = () => {
                                 Agendar un turno
                             </a>
                         </li>
-                        <li className='nav-item'>
-                            <a className='nav-link' href='/baja'>
-                                Agregar paciente
-                            </a>
-                        </li>
+
                         <li className='nav-item'>
                             <a className='nav-link ' href='/historial'>
                                 Historial

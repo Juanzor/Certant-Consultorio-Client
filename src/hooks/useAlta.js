@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { createTurnosRequest, updateTurnosRequest } from '../api/flightApi';
+import { createTurnosRequest, updateTurnosRequest } from '../api/turnosApi';
 import { useEffect } from 'react';
 
 const useAltaForm = (initialData, onValidate, flightToEdit) => {

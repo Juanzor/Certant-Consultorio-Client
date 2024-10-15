@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Turno from './Turno.jsx';
-import { getTurnosRequest } from '../api/flightApi.js';
+import { getTurnosRequest } from '../api/turnosApi.js';
 
 
 const Home = () => {

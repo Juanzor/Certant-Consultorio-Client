@@ -8,7 +8,7 @@ import {
     getProfesionalesByEspecialidadId,
     createTurnoRequest,
     getConsultoriosRequest,
-} from '../api/flightApi';
+} from '../api/turnosApi';
 
 const CreateTurnoForm = () => {
     const navigate = useNavigate();
@@ -55,7 +55,7 @@ const CreateTurnoForm = () => {
                 if (Array.isArray(responseProfesionales.data)) {
                     setProfesionales(responseProfesionales.data);
                 } else {
-                    setProfesionales([]); // En caso de que no sea un array, lo inicializas vacío
+                    setProfesionales([]);
                 }
             }
         };
@@ -74,25 +74,18 @@ const CreateTurnoForm = () => {
     const handleChangeDate = (date) => {
         let dateActual = new Date();
 
-        /*  if (!(date <= dateActual)) {
+         if (!(date <= dateActual)) {
             setStartDate(date);
         } else {
             alert('Selecciona una fecha a partir del dia siguiente.');
-        } */
+        }
 
-        setStartDate(dateActual);
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        /*   const formatDate = (date) => {
-            const year = date.getFullYear();
-            const month = String(date.getMonth() + 1).padStart(2, '0'); 
-            const day = String(date.getDate()).padStart(2, '0'); 
-
-            return `${year}-${month}-${day}`;
-        }; */
+       
 
         const hourValue = Number(formData.hora);
         if (hourValue < 8 || hourValue > 23) {
@@ -116,7 +109,7 @@ const CreateTurnoForm = () => {
 
             await createTurnoRequest(submitData);
             alert('Turno creado correctamente');
-            navigate("/");
+            navigate('/');
         } catch (error) {
             if (error.response) {
                 if (error.response.status === 409) {

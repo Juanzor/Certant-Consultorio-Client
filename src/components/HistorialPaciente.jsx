@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { getTurnosByPacienteIdRequest, getPacientesRequest } from '../api/flightApi';
+import { getTurnosByPacienteIdRequest, getPacientesRequest } from '../api/turnosApi';
 import { useState } from 'react';
 import Paciente from './Paciente';
 import Turno from './Turno';

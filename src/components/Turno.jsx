@@ -1,6 +1,6 @@
 import React from 'react';
-import { cancelTurnoRequest, deleteTurnosRequest } from '../api/flightApi';
 import { useNavigate } from 'react-router-dom';
+import { cancelTurnoRequest, deleteTurnosRequest } from '../api/turnosApi';
 
 const Turno = ({ turno }) => {
     const navigate = useNavigate();
