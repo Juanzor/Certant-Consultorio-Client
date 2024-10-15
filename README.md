@@ -3,7 +3,7 @@
 ## Proyecto creado con React usando Vite 
 
 
-### Crear un .env en la carpeta root especificando la variable de entorno pasandole como valor nuestra el endpoint de nuestra api corriendo en local: 
+### Crear un .env en la carpeta root especificando la variable de entorno pasandole como valor el endpoint de nuestra api rest corriendo en local: 
 
 ```
 VITE_API_URL=http://localhost:[puerto]/api/v1
