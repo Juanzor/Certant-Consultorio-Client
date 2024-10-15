@@ -1,5 +1,7 @@
 # Lado del cliente de Consultorio
 
+## Proyecto creado con React usando Vite 
+
 
 ### Correr los siguientes comandos para inicializar el proyecto
 
